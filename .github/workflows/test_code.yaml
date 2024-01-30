@@ -36,6 +36,7 @@ jobs:
       - name: Pull data
         run: |
           dvc remote add -d myremote s3://data-version-control && 
+          dvc remote modify myremote ssl_verify false &&
           dvc remote modify myremote access_key_id minio &&
           dvc remote modify myremote secret_access_key minio123 &&
           dvc remote modify myremote endpointurl http://f82a-41-46-135-25.ngrok-free.app &&
