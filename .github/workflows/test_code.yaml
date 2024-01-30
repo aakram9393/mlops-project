@@ -30,7 +30,7 @@ jobs:
         
       - name: Install packages
         run: | 
-          pip install -r dev-requirements.txt &&
+          # pip install -r dev-requirements.txt &&
           pip install --upgrade fsspec 
 
       - name: Pull data
