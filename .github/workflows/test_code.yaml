@@ -29,14 +29,17 @@ jobs:
           restore-keys: ${{ runner.os }}-pip-
         
       - name: Install packages
-        run: pip install -r dev-requirements.txt
+        run: |
+          pip install dvc_s3
+          pip install -r requirements.txt
 
       - name: Pull data
         run: |
           dvc remote add -d myremote s3://data-version-control && 
+          dvc remote modify myremote ssl_verify false &&
           dvc remote modify myremote access_key_id minio &&
           dvc remote modify myremote secret_access_key minio123 &&
-          dvc remote modify myremote endpointurl https://e90e-41-233-54-110.ngrok-free.app &&
+          dvc remote modify myremote endpointurl http://9a90-41-233-54-110.ngrok-free.app &&
           dvc pull
 
       - name: Test processed code and ML model
