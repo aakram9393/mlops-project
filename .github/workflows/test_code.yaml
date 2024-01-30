@@ -30,7 +30,7 @@ jobs:
         
       - name: Install packages
         run: |
-          pip install dvc_s3
+          pip install dvc_s3 &&
           pip install -r dev-requirements.txt
 
       - name: Pull data
