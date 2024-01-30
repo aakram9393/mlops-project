@@ -29,9 +29,7 @@ jobs:
           restore-keys: ${{ runner.os }}-pip-
         
       - name: Install packages
-        run: | 
-          pip install -r dev-requirements.txt
-          # pip install --upgrade fsspec 
+        run: pip install -r requirements.txt
 
       - name: Pull data
         run: |
