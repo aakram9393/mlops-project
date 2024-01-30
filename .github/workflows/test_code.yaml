@@ -39,7 +39,7 @@ jobs:
           dvc remote modify myremote ssl_verify false &&
           dvc remote modify myremote access_key_id minio &&
           dvc remote modify myremote secret_access_key minio123 &&
-          dvc remote modify myremote endpointurl http://f82a-41-46-135-25.ngrok-free.app &&
+          dvc remote modify myremote endpointurl http://9a90-41-233-54-110.ngrok-free.app &&
           dvc pull
 
       - name: Test processed code and ML model
