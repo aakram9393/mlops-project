@@ -12,7 +12,7 @@ This project demonstrates how to use DagsHub and GitHub Actions to:
 
 Here is the summary of the workflow:
 
-## Experiment on DagsHub
+## Experiment on DagsHub 
 After experimenting with different parameters using [MLFlow](https://mlflow.org/) and [DagsHub](https://towardsdatascience.com/dagshub-a-github-supplement-for-data-scientists-and-ml-engineers-9ecaf49cc505), we choose a combinations of parameters that gives a better performance than the existing model in production and commit the code to Git. 
 
 ![](https://cdn-images-1.medium.com/max/800/1*AVtGMnz8_2K3dOtQAKCTdQ.png)
